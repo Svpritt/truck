@@ -1,0 +1,164 @@
+body {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+font-feature-settings: 'liga' off;
+
+color: rgba(51, 51, 51, 0.8);
+}
+a {
+    text-decoration: none;
+  }
+h1 {
+    font-size: 60px;
+line-height: 76px;
+}
+.header {
+
+}
+.header-main {
+    display: flex;
+    /* padding-left: 165px; */
+
+}
+
+.header-main-info {
+    display: flex;
+    height: 72px;
+}
+.header-svg {
+    width: 17.5px;
+    height: 17.5px;
+    padding-top: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.header-info {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: rgba(51, 51, 51, 0.7);
+}
+.header-main-tel {
+    display: flex;
+    margin-left: auto;
+}
+.header-second {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+}
+
+.logo {
+}
+.navigation {
+    display: flex;
+flex-direction: row;
+width: 485px;
+align-items: flex-start;
+padding: 0px;
+gap: 46px;
+justify-content: space-between; 
+}
+.a-nav {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #333333;
+}
+.button {
+    width: 180px;
+    height: 40px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+color: #fff;
+background-color: #4762FF;
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+}
+
+.main-info {
+    width: 500px;
+    height: 300px;
+
+}
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-feature-settings: 'liga' off;
+    color: #333333;
+}
+.main-img {
+    max-width: 50%;
+    overflow: hidden;
+    
+}
+.money {
+    text-align: center;
+    width: 50%;
+    margin: 29px auto 0;
+    
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -35px;
+}
+.services-info {
+    width: calc(50% - 70px);
+    height: 287px;
+    margin: 35px;
+    background: #F4F6FA;
+border-radius: 9px;
+}
+.text {
+}
+.service-info-text {
+}
+.services-img {
+}
+.clients {
+}
+.galerry {
+}
+.nav-img {
+}
+.background {
+}
+.questions {
+}
+.name {
+}
+.Footer {
+}
+.footer-info {
+}
+.colum {
+}
+.copiryting {
+}
