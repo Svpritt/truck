@@ -18,6 +18,10 @@ h1 {
     font-size: 60px;
 line-height: 76px;
 }
+h2 {
+    font-size: 48px;
+line-height: 58px;
+}
 .header {
 
 }
@@ -60,11 +64,13 @@ color: rgba(51, 51, 51, 0.7);
 }
 
 .logo {
+    width: 207px;
+    height: 41px;
 }
 .navigation {
     display: flex;
 flex-direction: row;
-width: 485px;
+
 align-items: flex-start;
 padding: 0px;
 gap: 46px;
@@ -127,38 +133,158 @@ justify-content: center;
 .services {
     display: flex;
     flex-wrap: wrap;
-    margin: -35px;
+   gap: 35px;
+   justify-content: center;
 }
 .services-info {
     width: calc(50% - 70px);
     height: 287px;
-    margin: 35px;
     background: #F4F6FA;
 border-radius: 9px;
+display: flex;
+position: relative;
 }
 .text {
+    margin-left: 25px;
+    width: 50%;
+    margin-top: 25px;  
+    position: absolute;
 }
 .service-info-text {
+font-size: 16px;
+line-height: 19px;
 }
 .services-img {
+    width: fit-content;
+    height: fit-content;
+    mix-blend-mode: multiply;
+    margin-top: auto;
+    margin-left: auto;
 }
 .clients {
+    display: flex;
+    gap: 170px;
+    margin-top: 66px;
+}
+.where {
+background: #F4F4F4;
+/* Inside auto layout */
+display: flex;
+flex: none;
+order: 4;
+flex-grow: 0;
+gap: 27px;
+position: relative;
+}
+.where::before,
+.where::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: #F4F4F4;
+  z-index: -1;
+}
+
+.where::before {
+  left: -100vw;
+}
+
+.where::after {
+  right: -100vw;
+}
+.map-iframe {
+    filter: grayscale(100%);
+  }
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/truck-driver-opening-reservoir-tank-refuel-truck-holding-thumbs-up\ 1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .galerry {
 }
 .nav-img {
 }
 .background {
+    width: 40%;
+    margin: 35px;
+    background-color: #FFFFFF;
+    height: fit-content;
+    margin-left: 40%;
+    border-radius: 10px;
 }
 .questions {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .name {
+    /* margin-top: 35px; */
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.input-container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.input-button {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
 }
 .Footer {
+    padding-top: 35px;
+    background-color: #1a1a1a;
+    color: #fff;
+    position: relative;
+}
+.Footer::before,
+.Footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: #1a1a1a;
+  z-index: -1;
+}
+
+.Footer::before {
+  left: -100vw;
+}
+
+.Footer::after {
+  right: -100vw;
 }
 .footer-info {
+    display: flex;
+    justify-content: space-evenly;
 }
 .colum {
+    display: flex;
+    flex-direction: column;
+}
+.colum .navigation{
+    flex-direction: column;
+    gap: 0;
+}
+.colum .a-nav, .colum .title {
+    color: #fff;
+    display: flex;
+    gap: 10px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+.footer-icon {
+    width: 16px;
+    height: 16px;   
 }
 .copiryting {
 }
