@@ -117,10 +117,60 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d117916.11936470681!2d30.56186926572698!3d50.45572424192498!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1687168528331!5m2!1sru!2sua" width="50%" class="map-iframe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- uде находится и карта -->
-    <div class="container">
-        <div class="galerry"><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
-        <div class="nav-img"></div>
-    </div>
+    <div class="slider-container">
+        <h2 class="title">Фото галерея</h2>
+        <div class="slider">
+          <div class="slide">
+            <img src="https://raw.githubusercontent.com/Svpritt/truck/main/main-img/truck-1.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="https://raw.githubusercontent.com/Svpritt/truck/main/main-img/3d-render-fleet-delivery-vehicles%201.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="https://raw.githubusercontent.com/Svpritt/truck/main/truck-driver-opening-reservoir-tank-refuel-truck-holding-thumbs-up%201.jpg" alt="Image 3">
+          </div>
+        </div>
+        <div class="slider-dots"></div>
+      </div>
+      <script>
+        // Получаем элементы слайдера
+const sliderContainer = document.querySelector('.slider-container');
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.querySelector('.slider-dots');
+
+// Создаем точки для переключателя
+slides.forEach((slide, index) => {
+  const dot = document.createElement('span');
+  dot.classList.add('dot');
+  dot.addEventListener('click', () => {
+    showSlide(index);
+  });
+  dotsContainer.appendChild(dot);
+});
+
+const dots = dotsContainer.querySelectorAll('.dot');
+
+let currentSlide = 0;
+
+// Показать указанный слайд
+function showSlide(slideIndex) {
+  if (slideIndex < 0 || slideIndex >= slides.length) {
+    return;
+  }
+
+  slides[currentSlide].style.display = 'none';
+  dots[currentSlide].classList.remove('active');
+
+  slides[slideIndex].style.display = 'block';
+  dots[slideIndex].classList.add('active');
+
+  currentSlide = slideIndex;
+}
+
+// Показать первый слайд при загрузке страницы
+showSlide(0);
+
+      </script>
     <div class="form">
         <div class="background">
             <form action="#" class="questions">
