@@ -11,6 +11,7 @@
 <body>
     <header class="header">
         <div class="header-main">
+            
             <div class="header-main-info"><svg class="header-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.00002 15.6666H11C11.4584 15.6666 11.8334 16.0416 11.8334 16.5C11.8334 16.9583 11.4584 17.3333 11 17.3333H1.00002C0.541687 17.3333 0.166687 16.9583 0.166687 16.5C0.166687 16.0416 0.541687 15.6666 1.00002 15.6666ZM6.00002 4.83329C5.08335 4.83329 4.33335 5.58329 4.33335 6.49996C4.33335 7.41663 5.08335 8.16663 6.00002 8.16663C6.91669 8.16663 7.66669 7.41663 7.66669 6.49996C7.66669 5.58329 6.91669 4.83329 6.00002 4.83329ZM6.00002 0.666626C8.72502 0.666626 11.8334 2.71663 11.8334 6.62496C11.8334 9.10829 10.0584 11.725 6.50835 14.45C6.20835 14.6833 5.79169 14.6833 5.49169 14.45C1.94169 11.7166 0.166687 9.10829 0.166687 6.62496C0.166687 2.71663 3.27502 0.666626 6.00002 0.666626Z" fill="#333333" fill-opacity="0.7"/>
 
@@ -19,7 +20,7 @@
 
             </p>
             </div>
-            <svg class="header-svg" style="margin-left:35px; height:50px" fill=none xmlns="http://www.w3.org/2000/svg">
+            <svg id="header-main_line" class="header-svg" style="margin-left:35px; height:50px" fill=none xmlns="http://www.w3.org/2000/svg">
                 <line  height="0" x1="1" y1="50" x2="1" y2="1" stroke="#333333" stroke-opacity="0.5" stroke-linecap="round" border="1px solid rgba(51, 51, 51, 0.1)" />
                 </svg>
                 
@@ -32,7 +33,7 @@
 
             </p>
             </div>
-
+        
             <div class="header-main-tel">
                 <svg class="header-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.45551 11.4666C9.61523 12.6431 11.0184 13.5514 12.5666 14.1278L14.6611 12.4611C14.7232 12.4183 14.7968 12.3954 14.8722 12.3954C14.9476 12.3954 15.0212 12.4183 15.0833 12.4611L18.9722 14.9666C19.1198 15.0554 19.2448 15.1773 19.3372 15.3226C19.4297 15.468 19.4871 15.6329 19.5048 15.8042C19.5226 15.9756 19.5003 16.1487 19.4397 16.3099C19.3791 16.4712 19.2818 16.6161 19.1555 16.7333L17.3333 18.5333C17.0723 18.7912 16.7516 18.9804 16.3997 19.0841C16.0478 19.1878 15.6757 19.2028 15.3166 19.1278C11.7345 18.3879 8.43281 16.6553 5.78885 14.1278C3.20356 11.5751 1.41455 8.32712 0.638845 4.77776C0.562215 4.42422 0.578209 4.05689 0.685276 3.71135C0.792344 3.36582 0.986854 3.0538 1.24996 2.80553L3.13885 0.983311C3.25573 0.863192 3.39828 0.771074 3.55582 0.713854C3.71335 0.656633 3.88179 0.635793 4.04852 0.652893C4.21525 0.669994 4.37595 0.724592 4.51859 0.8126C4.66123 0.900607 4.78211 1.01974 4.87218 1.16109L7.46107 4.99998C7.50572 5.06026 7.52983 5.13329 7.52983 5.20831C7.52983 5.28333 7.50572 5.35636 7.46107 5.41664L5.75551 7.46664C6.3475 8.98383 7.26981 10.3502 8.45551 11.4666Z" fill="#333333" fill-opacity="0.7"/>
@@ -44,7 +45,7 @@
             </div>
         </div>
         <!-- первый Хедер ниже будет второй, у нас 3 одинаковых контейнера в каждом свг + текст в 2 строки -->
-        <svg width="1110" height="2" viewBox="0 0 1110 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" max-width="1110" height="2" viewBox="0 0 1110 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line x1="0.5" y1="0.75" x2="1109.5" y2="0.75" stroke="#333333" stroke-opacity="0.1" stroke-linecap="round"/>
             </svg>
             
@@ -88,7 +89,7 @@
                 <h3 class="title">Магазин аксессуаров</h3>
                 <p class="service-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
             </div>
-            <img src="https://raw.githubusercontent.com/Svpritt/truck/main/img-service/Lovepik_com-401744084-car-washing 1.png" alt="" class="services-img">
+            <img style="width: 80%" src="https://raw.githubusercontent.com/Svpritt/truck/main/img-service/Lovepik_com-401744084-car-washing 1.png" alt="" class="services-img">
         </div>
         <div class="services-info">
             <div class="text">
@@ -99,22 +100,22 @@
         </div>
     </div>
 <!-- третий блок , заголовок текст + 4 одинаковых блока с нужной инфой -->
-    <div class="clients">
+    <div class="main">
         <div class="main-info">
             <h2 class="title">У вас вопрос кто мы а кто мы блин</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. <br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer. <br>
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
         </div>
-        <img src="https://raw.githubusercontent.com/Svpritt/truck/main/Group 58.png" alt="">
+        <img id="client" src="https://raw.githubusercontent.com/Svpritt/truck/main/Group 58.png" alt="">
     </div>
     <!-- о наших клиентах  слева текст справа логотипы -->
-    <div class="where">
+    <div class="main" id="where">
         <div class="main-info">
             <h2 class="title">Где мы?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d117916.11936470681!2d30.56186926572698!3d50.45572424192498!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1687168528331!5m2!1sru!2sua" width="50%" class="map-iframe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="where-map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d117916.11936470681!2d30.56186926572698!3d50.45572424192498!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1687168528331!5m2!1sru!2sua" width="50%" class="map-iframe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- uде находится и карта -->
     <div class="slider-container">
@@ -196,7 +197,7 @@ showSlide(0);
                 <img src="https://raw.githubusercontent.com/Svpritt/truck/main/logo/5d269a11-dba2-4b7f-9935-7713a70620de1.png" alt="" class="logo">
                 <div class="colum">
                     <h3  class="title">Главная</h3>
-                    <nav  class="navigation"><a  class="a-nav" href="#">перша ссилка</a><a  class="a-nav" href="#">Друга ссилка</a><a  class="a-nav" href="#">Третя ссилка</a><a  class="a-nav" href="#">Контакти</a></nav>
+                    <nav  class="footer-nav"><a  class="a-nav" href="#">перша ссилка</a><a  class="a-nav" href="#">Друга ссилка</a><a  class="a-nav" href="#">Третя ссилка</a><a  class="a-nav" href="#">Контакти</a></nav>
                 </div>
                 <div  class="colum">
                     <h3  class="title">Контакты</h3>
